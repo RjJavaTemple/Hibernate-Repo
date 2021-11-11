@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+<class name="Com.Rj.Entity.SetAndGetImp" table="ACTOR_INFO">
+
+<id name="ActorId" >
+<generator class="increment"/>
+</id>
+
+<property name="ActorName"  />
+<property name="ActorAddress" />
+<property name="ActorSalary" />
+<property name="ActorColor"/>
+<property name="ActorGender"/>
+<property name="ActorCurrentFilm" />
+
+</class>
+<query name="HQL_GET_SETANDGETIMP_BY_ACTORID_RANGE">
+  <![CDATA[ from SetAndGetImp where  ActorId>=?1 and ActorId<=?2 ]]>
+</query>
+</hibernate-mapping>

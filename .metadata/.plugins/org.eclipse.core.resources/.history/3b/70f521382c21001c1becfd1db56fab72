@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+<!-- Add The Required The Connection In The Sql -->
+<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+<property name="connection.url">jdbc:oracle:thin:@localhost:1521:chintu</property>
+<property name="connection.username">system</property>
+<property name="connection.password">123</property>
+
+<!-- Show The Console Screen Sql Query -->
+<property name="show_sql">true</property>
+<property name="format_sql">true</property>
+
+<!-- Add The Hicaricp -->
+<property name="connection.provider_class">org.hibernate.hikaricp.internal.HikariCPConnectionProvider</property>
+
+<!-- Add The Auto Generate Table -->
+<property name="hbm2ddl.auto">update</property>
+
+<!-- Add The 2nd Levle Property -->
+ <property name="cache.use_second_level_cache">true</property>
+<property name="cache.region.factory_class">ehcache</property>
+<property name="net.sf.ehcache.configurationResourceName">com/rj/cfgs/ehcache.xml</property>
+<!-- Query Levle Property -->
+<property name="cache.use_query_cache">true</property>
+
+<!-- Add The Maping Class -->
+<mapping resource="com/rj/entity/Persion.hbm.xml"/>
+
+
+</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,13 @@
+package RjDjMan.Proj_113_TranctionMangement_Using_BankData;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="com.rj.entity.Libeary" table="OTOLibTab1">
+<id name="StuLibId">
+<generator class="foreign">
+<param name="property">studentDetails</param>
+</generator>
+</id>
+<property name="BookName" length="20"/>
+<property name="Dept" length="20"/>
+<property name="Dor"/>
+
+<!-- Add The Student Fk Column -->
+<one-to-one name="studentDetails"  class="com.rj.entity.Student" lazy="proxy" cascade="all"/>
+</class>
+</hibernate-mapping>

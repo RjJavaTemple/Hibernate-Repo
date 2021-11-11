@@ -1,0 +1,54 @@
+package com.rj.dao;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.rj.entity.BankCoustmor;
+import com.rj.utiality.UtialityImplitation;
+
+public class MethodImplDao implements MethhodInDao
+{
+     
+	@Override
+	public void InsertOperacation()
+	{
+	      //Create Session
+		Session  sec=UtialityImplitation.getSession();
+		//Add The Tranction
+		Transaction tx=null;
+		try(sec)
+		{
+			//Begin Tranction
+			tx=sec.beginTransaction();
+			//Lode The Object
+			BankCoustmor Bank=new BankCoustmor("Rashmi", 70000.0f);
+			//Save The Data
+			sec.save(Bank);
+			//Add The Tranction
+			tx.commit();
+		}
+		catch (HibernateException he)
+		{
+		   he.printStackTrace();
+		   if(tx!=null || tx.getStatus()!=null ||tx.getRollbackOnly())
+			   tx.rollback();
+		}
+	}
+
+	@Override
+	public void UpdateSalary(int Acno,float Amount)
+	{
+	    //Create The Session Object
+		Session sec=UtialityImplitation.getSession();
+		//Add The Tranction
+		Transaction tx=null;
+		try(sec)
+		{
+			//Begin Tranction
+			tx=sec.beginTransaction();
+			
+		}
+	}
+
+}

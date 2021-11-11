@@ -1,0 +1,5 @@
+package com.rj.dao;
+
+public interface MethhodInDao {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Hibernate.Map.xml&apos; to &apos;Proj-62_CallableStatement_Function_Pl_Sql/src/main/java/Conn.Rj.Entity&apos;&#x0D;&#x0A;- Original project: &apos;lib&apos;&#x0D;&#x0A;- Destination element: &apos;Proj-62_CallableStatement_Function_Pl_Sql/src/main/java/Conn.Rj.Entity&apos;&#x0D;&#x0A;- Original element: &apos;Hibernate.Map.xml&apos;" description="Copy file" destination="=Proj-62_CallableStatement_Function_Pl_Sql/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;Conn.Rj.Entity" element1="src/main/java/Com/Rj/Entity/Hibernate.Map.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1629334700734" units="0" version="1.0"/>
+</session>

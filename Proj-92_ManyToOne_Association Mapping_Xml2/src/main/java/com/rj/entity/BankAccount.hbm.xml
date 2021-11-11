@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+<class name="com.rj.entity.BankAccount" table="OTM_Bank_ByDir">
+  <id name="AccountNo">
+   <generator class="sequence">
+   <param name="sequence_name">Accno_Seq</param>
+   <param name="initial_value">101001</param>
+   <param name="increment_size">1</param>
+   </generator>
+  </id>
+  
+  <!-- Configure The Columns -->
+  <property name="BankName" length="20" type="string"/>
+  <property name="AccountType" length="20" type="string"/>
+  <property name="Location" length="20" type="string"/>
+  <many-to-one name="persion" class="com.rj.entity.Persion" cascade="all" lazy="proxy"/>
+</class>
+</hibernate-mapping>

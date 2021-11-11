@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+<class name="com.rj.entity.Student" table="OTOStuTab1">
+<id name="StuId">
+<generator class="increment"/>
+</id>
+<property name="StuName" length="20"/>
+<property name="StuAddress" length="20"/>
+
+<!--  Add The Libery Object -->
+<one-to-one name="LiberyDetails" class="com.rj.entity.Libeary"  cascade="all" lazy="proxy" />
+</class>
+</hibernate-mapping>

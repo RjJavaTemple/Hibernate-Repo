@@ -1,0 +1,26 @@
+package com.rj.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+
+@Data
+@Entity
+@Table(name = "BankCoustDetalis_TX")
+@RequiredArgsConstructor
+public class BankCoustmor 
+{
+	@Id
+	@GeneratedValue
+     private Integer PerId;
+	@NonNull
+     private String PerName;
+	@NonNull
+     private Float Amount;
+     
+}

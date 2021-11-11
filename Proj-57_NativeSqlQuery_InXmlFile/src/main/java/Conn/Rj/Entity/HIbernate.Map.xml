@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+<class name="Conn.Rj.Entity.SetAndGetClass" table="Student">
+ <id name="StuId" length="10" type="integer">
+ <generator class="increment"/>
+ </id>
+ <property name="StuName" length="15" type="string"/>
+ <property name="StuAddress" length="15" type="string"/>
+ <property name="StuMark" length="15" type="double"/>
+ <property name="StuSec" length="15" type="string"/>
+</class>
+<sql-query name="SELECT_OPERACATION1">
+     <return class="Conn.Rj.Entity.SetAndGetClass"/>
+     <![CDATA[SELECT StuId,StuName,StuAddress,StuMark,StuSec FROM Student WHERE StuAddress=? ]]>
+</sql-query>
+
+
+<!--  Prepare The 2nd Sql Query-->
+ <sql-query name="SELECT_OPERACATION2">
+ <return-scalar column="StuId" type="integer"/>
+ <return-scalar column="StuName" type="string"/>
+<![CDATA[ SELECT STUID,STUNAME FROM STUDENT WHERE STUID>=?1 AND STUID<=?2]]>
+</sql-query>
+
+
+<!-- Prepare The 3rs Sql Query Update -->
+<sql-query name="UPDAET_QUERY">
+<![CDATA[update Student set StuAddress=:newadd where  StuId=:idname ]]>
+</sql-query>
+
+</hibernate-mapping>

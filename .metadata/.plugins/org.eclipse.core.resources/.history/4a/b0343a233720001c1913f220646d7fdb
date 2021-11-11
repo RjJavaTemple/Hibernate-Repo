@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+<!-- Add The Required The Connection In The Sql -->
+<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+<property name="connection.url">jdbc:oracle:thin:@localhost:1521:chintu</property>
+<property name="connection.username">system</property>
+<property name="connection.password">123</property>
+
+<!-- Show The Console Screen Sql Query -->
+<property name="show_sql">true</property>
+<property name="format_sql">true</property>
+
+<!-- Add The Hicaricp -->
+<property name="connection.provider_class">com.zaxxer.hikari.hibernate.HikariConnectionProvider</property>
+
+<!-- Add The Auto Generate Table -->
+<property name="hbm2ddl.auto">update</property>
+
+<!-- Add The Maping Class -->
+<mapping class="com.rj.entity.Person"/>
+
+
+</session-factory>
+</hibernate-configuration>

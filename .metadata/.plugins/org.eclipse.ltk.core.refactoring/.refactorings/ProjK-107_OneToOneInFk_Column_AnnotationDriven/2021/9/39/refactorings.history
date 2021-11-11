@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;ProjK-107_OneToOneInFk_Column_AnnotationDriven&apos;&#x0D;&#x0A;- Original project: &apos;ProjK-107_OneToOneInFk_Column_AnnotationDriven&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Lincence.hbm.xml&#x0D;&#x0A;     Persion.hbm.xml" description="Delete elements" element1="src/main/java/com/rj/entity/Persion.hbm.xml" element2="src/main/java/com/rj/entity/Lincence.hbm.xml" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="2" stamp="1632592941629" subPackages="false" version="1.0"/>
+</session>

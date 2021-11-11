@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        <hibernate-mapping>
+        <class name="MYSQL.RJ.Entity.StudentTab" table="Stu_Tab_123">
+        <id name="StuSno" length="15" type="integer">
+        <generator class="increment"/>
+        </id>
+        <property name="StuName" length="15" type="string"/>
+        <property name="StuAddrs" length="15" type="string"/>
+        <property name="StuMark" length="15" type="double"/>
+        <property name="StuSec" length="5" type="char"/>
+        <property name="StuTotalMark" length="15" type="double"/>
+        </class>
+        </hibernate-mapping>
+        
+     

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+        
+       <hibernate-configuration>
+       <session-factory>
+       <!-- The mysql connection in the db table -->
+       <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+       <property name="connection.url">jdbc:mysql:///chintu</property>
+       <property name="connection.username">root</property>
+        <property name="connection.password">123456</property>
+        
+        <!-- Show the Sql query -->
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        
+        <!-- Auto Create the Table in the Database -->
+        <property name="hbm2ddl.auto">update</property>
+        
+        <!-- Add The Connection Provider hicaricp -->
+        <property name="connection.provider_class">com.zaxxer.hikari.hibernate.HikariConnectionProvider</property>
+        
+        <!-- set  the mapping File -->
+        <mapping resource="MYSQL/RJ/Entity/Hibernet.Map.xml"/>
+        
+       </session-factory>
+       </hibernate-configuration>
+        
+        

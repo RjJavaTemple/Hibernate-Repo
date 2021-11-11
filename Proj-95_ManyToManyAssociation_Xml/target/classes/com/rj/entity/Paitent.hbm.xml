@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+
+<class name="com.rj.entity.Patitent" table="MTM_DocTab">
+<id name="PatId">
+<generator class="sequence">
+<param name="sequence_name">PatId_Seq</param>
+<param name="initial_value">101001</param>
+<param name="increment_size">1</param>
+</generator>
+</id>
+<property name="PaiName"/>
+<property name="Problem"/>
+
+<set name="Doctor"  cascade="all" lazy="true" table="MTM_DocPatConnTab">
+<key column="Parent_Id"/>
+<many-to-many class="com.rj.entity.Doctor" column="Doctor_Id"/>
+</set>
+</class>
+</hibernate-mapping>

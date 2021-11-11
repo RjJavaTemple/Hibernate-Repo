@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;pom.xml&apos; to &apos;ProjK-108_WorkingWithClobAndBlobDatatypy_Annotation&apos;&#x0D;&#x0A;- Original project: &apos;ProjK-107_OneToOneInFk_Column_AnnotationDriven&apos;&#x0D;&#x0A;- Destination element: &apos;ProjK-108_WorkingWithClobAndBlobDatatypy_Annotation&apos;&#x0D;&#x0A;- Original element: &apos;pom.xml&apos;" description="Copy file" element1="pom.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1632640196389" target="/ProjK-108_WorkingWithClobAndBlobDatatypy_Annotation" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,20 @@
+package com.rj.entity;
+
+import lombok.Data;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+
+@Data
+@RequiredArgsConstructor
+public class Person
+{
+     private Integer Pid;
+     @NonNull
+     private String Pname;
+     @NonNull
+     private String Paddress;
+     @NonNull
+     private String PGmail;
+     @NonNull
+     private Float Salary;
+}

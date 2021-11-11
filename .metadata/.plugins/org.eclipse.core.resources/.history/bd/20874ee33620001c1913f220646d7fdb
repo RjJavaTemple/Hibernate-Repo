@@ -1,0 +1,27 @@
+package com.rj.test;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.rj.entity.Person;
+import com.rj.utiality.UtialityImplitation;
+
+public class ClientTestApp
+{
+  public static void main(String[] args)
+  {
+	 //Create The SessionFactory Object
+	  SessionFactory factory=UtialityImplitation.getSessionFactory();
+	  //Create The Session Obj
+	  Session sec=UtialityImplitation.getSession();
+	  //Add The Tranction
+	  Transaction tx=null;
+	  try(sec;factory)
+	  {
+		  //Lode The Object
+		  Person per=new Person("Ranjan", "Mirzapur", "Jena@gmail", 100.of);
+		  
+	  }
+  }
+}

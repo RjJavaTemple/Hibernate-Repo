@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+<class name="com.rj.entity.StudentDetails" table="ColleMap_Tab">
+<id name="Sno">
+<generator class="increment"/>
+</id>
+<property name="Sname" length="15" />
+
+<!-- Add The List Table nad The Column -->
+<list name="Frends" table="Stu1_Tab1">
+<key column="Student_ID"/>
+<list-index base="0" column="Last_Index"/>
+<element column="FREND" length="10" type="string"/>
+</list>
+
+<!-- Add The Set data And All Column -->
+<set name="PhoneNo" table="Stu1_Mobi_Tab1">
+<key column="Student_Phone"/>
+<element column="PHONENUMBER" type="long" length="20"/>
+</set>
+
+<!-- Add The Map Data And The All Column -->
+<map name="IdCirtificate" table="Stu1_Map_Tab1">
+<key column="Student_Id"/>
+<map-key column="IdName" length="12" type="string"/>
+<element column="IdCirtificateNo" length="15" type="long"/>
+</map>
+</class>
+</hibernate-mapping>

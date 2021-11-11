@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+<class name="com.rj.entity.Persion" table="PolyInherit_Per" polymorphism="implicit">
+ <id name="Id">
+ <generator class="increment"/>
+ </id>
+ <property name="Name" length="20" type="string"/>
+ <property name="Address" length="20" type="string"/>
+ </class>
+ 
+ <class name="com.rj.entity.Employee" table="PolyInherit_Emp" >
+ <id name="Id">
+ <generator class="increment"/>
+ </id>
+ <property name="Name" length="20" type="string"/>
+ <property name="Address" length="20" type="string"/>
+ <property name="Degs" length="20" type="string"/>
+ <property name="Dept" length="20" type="string"/>
+ <property name="Salary"/>
+ </class>
+ 
+ <class name="com.rj.entity.Coustmor" table="PolyInherit_Cous">
+ <id name="Id">
+ <generator class="increment"/>
+ </id>
+ <property name="Name" length="20" type="string"/>
+ <property name="Address" length="20" type="string"/>
+  <property name="BillAmount"/>
+   <property name="PaymentType" length="20" type="string"/>
+ </class>
+</hibernate-mapping> 

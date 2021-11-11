@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+<class name="com.rj.entity.Person" table="PersionL2Table">
+<id name="Pid">
+<generator class="increment"/>
+</id>
+<property name="Pname"/>
+<property name="Paddress"/>
+<property name="PGmail"/>
+<property name="Salary"/>
+</class>
+</hibernate-mapping>

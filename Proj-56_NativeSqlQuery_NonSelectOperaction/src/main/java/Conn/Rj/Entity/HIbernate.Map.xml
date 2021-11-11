@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+<class name="Conn.Rj.Entity.SetAndGetClass" table="Student">
+ <id name="StuId" length="10" type="integer">
+ <generator class="increment"/>
+ </id>
+ <property name="StuName" length="15" type="string"/>
+ <property name="StuAddress" length="15" type="string"/>
+ <property name="StuMark" length="15" type="double"/>
+ <property name="StuSec" length="15" type="string"/>
+</class>
+</hibernate-mapping>

@@ -1,0 +1,46 @@
+package com.rj.dao;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.rj.entity.Person;
+import com.rj.utiality.UtialityImplitation;
+
+public class IpersonImplClass implements IpersonMethod
+{
+
+	@Override
+	public void SaveData() 
+	{
+	      //Create The Session Object
+		Session sec=UtialityImplitation.getSession();
+		//Add The Tranction
+		Transaction tx=null;
+		FileInputStream Fis=null;
+		try(sec)
+		{
+			//Create The Persion Object
+			Person Per=new Person();
+			Per.setPname("Ranjan");
+			Per.setPaddress("Chandikhole");
+			//Set the Photo Are Persioon
+			try(FileInputStream Fis=new FileInputStream("");){}catch(Exception e) {e.printStackTrace();}
+			//Set the Resume Are Person
+			File file=new File("");
+			//Retrive The Photo Content
+			byte[] PhotoData=new byte[]
+		}
+	}
+
+	
+	
+	@Override
+	public void SelectData() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

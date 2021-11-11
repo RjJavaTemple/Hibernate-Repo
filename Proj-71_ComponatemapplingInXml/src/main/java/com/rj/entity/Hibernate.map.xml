@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+<class name="com.rj.entity.Persion" table="JOBDETAILS_TAB">
+<id name="PersioId" type="integer">
+<generator class="increment"/>
+</id>
+<!-- Add The All Table Columl -->
+<property name="PersionName" type="string" length="15"/>
+<property name="PersionAddress" type="string" length="15"/>
+<property name="PersionColor" type="string" length="15"/>
+
+<!-- Add The Component Data In The table -->
+<component name="Details" class="com.rj.entity.Dtails">
+<property name="Degs" type="string" length="15"/>
+<property name="CompanyName" type="string" length="15"/>
+<property name="DeptNo" type="integer" length="15"/>
+<property name="Salary" type="double"/>
+</component>
+</class>
+</hibernate-mapping>

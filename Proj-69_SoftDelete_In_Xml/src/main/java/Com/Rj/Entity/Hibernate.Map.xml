@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+<class name="Com.Rj.Entity.SetAndGetImp" table="RJDJMANBANK" where="STATUS NOT IN('CLOSED','BLOCKED')">
+<id name="ACNUMBER" >
+<generator class="increment"/>
+</id>
+
+<property name="ACHOLDERNAME"  />
+<property name="AMOUNT" />
+<property name="STATUS"/>
+
+<!-- The Delete The Object The Data Are The Not PurelyDelete-->
+<sql-delete>UPDATE RJDJMANBANK SET STATUS='CLOSED' WHERE ACNUMBER=?</sql-delete>
+
+</class>
+</hibernate-mapping>

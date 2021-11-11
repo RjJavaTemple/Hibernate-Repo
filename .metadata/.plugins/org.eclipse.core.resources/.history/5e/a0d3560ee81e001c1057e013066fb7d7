@@ -1,0 +1,20 @@
+package com.rj.dao;
+
+public class IpersonImplClass implements IpersonMethod
+{
+
+	@Override
+	public void SaveData() 
+	{
+	    	
+	}
+
+	
+	
+	@Override
+	public void SelectData() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

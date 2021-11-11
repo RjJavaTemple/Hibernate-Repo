@@ -1,0 +1,18 @@
+package com.rj.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "Person_TabClobBlobData1")
+public class Person
+{
+     private Integer Pid;
+     private String Pname;
+     private String Paddress;
+     private byte[] Photo;
+     private char[] Resume;
+}

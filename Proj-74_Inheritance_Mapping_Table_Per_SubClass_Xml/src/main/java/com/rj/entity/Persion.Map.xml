@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+<class name="com.rj.entity.Persion" table="InherMap_Per" >
+ <id name="Id">
+ <generator class="increment"/>
+ </id>
+ <property name="Name"/>
+ <property name="Address"/>
+ 
+ <!--  Using The Join SubClass-->
+ <joined-subclass name="com.rj.entity.Employee" table="InherMap_Emp" >
+  <key column="Persion_Id"/>
+ <property name="Degs"/>
+ <property name="Dept"/>
+ <property name="Salary"/>
+ </joined-subclass>
+ 
+ 
+ <joined-subclass name="com.rj.entity.Coustmor" table="InherMap_Cou">
+ <key column="Persion_Id"/>
+  <property name="BillAmount"/>
+   <property name="PaymentType"/>
+ </joined-subclass>
+</class>
+</hibernate-mapping> 

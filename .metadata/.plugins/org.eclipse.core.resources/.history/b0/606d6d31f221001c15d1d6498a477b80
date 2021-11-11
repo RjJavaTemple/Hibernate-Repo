@@ -1,0 +1,34 @@
+package com.rj.dao;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.rj.entity.BankCoustmor;
+import com.rj.utiality.UtialityImplitation;
+
+public class MethodImplDao implements MethhodInDao
+{
+     
+	@Override
+	public void InsertOperacation()
+	{
+	      //Create Session
+		Session  sec=UtialityImplitation.getSession();
+		//Add The Tranction
+		Transaction tx=null;
+		try(sec)
+		{
+			//Begin Tranction
+			tx=sec.beginTransaction();
+			//Lode The Object
+			BankCoustmor Bank=new BankCoustmor("Ranjan", 7500.0f);
+		}
+	}
+
+	@Override
+	public void UpdateSalary() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

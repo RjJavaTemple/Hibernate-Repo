@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+<class name="com.rj.entity.Doctor" table="MTM_IBag">
+<id name="DocId">
+<generator class="increment"/>
+</id>
+<property name="DocName"/>
+<property name="DocCategory"/>
+
+<set name="Patient" cascade="all" inverse="true" table="MTM_DocPatConnTab" lazy="extra">
+<key column="Doctor_Id"/>
+<many-to-many class="com.rj.entity.Patitent" column="Parent_Id"/>
+</set>
+</class>
+</hibernate-mapping>

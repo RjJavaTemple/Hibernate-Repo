@@ -1,0 +1,10 @@
+package com.rj.entity;
+
+public class Person
+{
+     private Integer Pid;
+     private String Pname;
+     private String Paddress;
+     private byte[] Photo;
+     private char[] Resume;
+}

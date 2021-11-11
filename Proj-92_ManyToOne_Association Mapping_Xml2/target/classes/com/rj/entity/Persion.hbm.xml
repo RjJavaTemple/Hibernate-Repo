@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+<class name="com.rj.entity.Persion" table="OTM_Per_ByDir" >
+<id name="PId">
+<generator class="increment"/>
+</id>
+
+<!-- Configure The All Columns -->
+<property name="Pname"/>
+<property name="Paddress"/>
+
+<!-- Set The Bank Column Hear Using The Set -->
+<set name="Account" cascade="all-delete-orphan" lazy="true" inverse="true">
+<key column="Persion_id"/>
+<one-to-many class="com.rj.entity.BankAccount"/>
+</set>
+</class>
+</hibernate-mapping>

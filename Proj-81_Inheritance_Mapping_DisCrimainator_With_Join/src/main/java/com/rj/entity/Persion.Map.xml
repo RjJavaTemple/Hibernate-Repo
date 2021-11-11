@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+<class name="com.rj.entity.Persion" table="InherMap_Dis_Per" discriminator-value="per">
+ <id name="Id">
+ <generator class="increment"/>
+ </id>
+ <discriminator column="Persion_Type" type="string" length="15"/>
+ <property name="Name"/>
+ <property name="Address"/>
+ 
+ <!--  Using The DisCiminator SunClass-->
+ <subclass name="com.rj.entity.Employee" discriminator-value="emp">
+    <join table="InherMap_Dis_emp">
+    <key column="Persion_Id"/>
+ <property name="Degs"/>
+ <property name="Dept"/>
+ <property name="Salary"/>
+ </join>
+ </subclass>
+ 
+ 
+ <subclass name="com.rj.entity.Coustmor" discriminator-value="cos">
+ <join table="InherMap_Dis_cos">
+ <key column="Persion_Id"/>
+  <property name="BillAmount"/>
+   <property name="PaymentType"/>
+   </join>
+ </subclass>
+</class>
+</hibernate-mapping> 
