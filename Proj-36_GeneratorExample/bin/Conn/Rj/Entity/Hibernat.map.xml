@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        <hibernate-mapping>
+        <class name="Conn.Rj.Entity.SetAndGetFileAnnotation">
+        <id name="regino">
+          <generator class="increment"/>
+        </id>
+        
+        <!-- Updated_Count -->
+        <version name="updationsCount" type="integer"/>
+        
+        <property name="mobileno" type="long"/>
+        <property name="prepared" type="boolean"/>
+        <property name="circale" type="string"/>
+        <property name="coler_tune" type="string"/>
+        </class>
+        </hibernate-mapping>

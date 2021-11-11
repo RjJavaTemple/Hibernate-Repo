@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RetrivedataFromUtillClass/src/Conn/Rj/Entity/Hibernet.cfg.xml&apos; to &apos;product.hbm.xml&apos;" description="Rename resource &apos;Hibernet.cfg.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Conn/Rj/Entity/Hibernet.cfg.xml" name="product.hbm.xml" stamp="1624539414553" updateReferences="true"/>
+</session>

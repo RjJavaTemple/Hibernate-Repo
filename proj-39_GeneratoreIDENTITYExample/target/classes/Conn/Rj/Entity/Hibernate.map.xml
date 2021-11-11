@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+      <hibernate-mapping>
+      <class  name="Conn.Rj.Entity.SetAndGetClass" table="STUDENT123" dynamic-insert="true">
+                  <!-- Create The Id Value In The Table -->
+                  <id name="StuSno" length="10" >
+                  <!-- Auto Generate Number Using Generator -->
+                  <!-- <generator class="sequence"/> -->
+                  
+                  <!-- Generator Class In UserDefine -->
+                 <!--  <generator class="sequence">
+                  <param name="sequence_name">RANJNAN_SEQ</param>
+                  </generator> -->
+                  
+                  <!-- Generator Are Using In The All Initial Hear -->
+                  <generator class="sequence">
+                    <param name="sequence_name">RANJNAN_SEQ1</param>
+                    <param name="initial_value">500</param>
+                    <param name="increment_size">10</param>
+                  </generator>
+                  
+                  
+                  </id>
+                  <property name="StudentName" column="STUDENTNAME" length="15" />
+                  <property name="StudentAddress" column="STUDENTADDRESS" length="15"/>
+                  <property name="StdentAvrage" column="STDENTAVRAGE" length="15"/>
+                  <property name="StudentFullMark" column="STUDENTFULLMARK" length="15"/>
+                  <property name="StudentSection" column="STUDENTSECTION" length="15" />
+      </class>
+      </hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        <hibernate-mapping>
+        <class name="Conn.Rj.Entity.ProjectClassInfo">
+        
+        <!-- Composite Id Field In The Xml File -->
+        <composite-id name="id" class="Conn.Rj.Entity.IdClassConfi">
+        <key-property name="pid" type="integer"/>
+        <key-property name="projid" type="integer"/>
+        </composite-id>
+        
+        <property name="pname" type="string"/>
+        <property name="projname" type="string"/>
+        <property name="prommber" type="integer"/>
+        </class>
+        </hibernate-mapping>

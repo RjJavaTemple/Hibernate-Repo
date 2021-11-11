@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+      <hibernate-mapping>
+      <class  name="Conn.Rj.Entity.SetAndGetClass" table="STUDENT123" dynamic-insert="true">
+                  <!-- Create The Id Value In The Table -->
+                  <id name="StuSno" length="10" >
+                
+                <!-- Using The native Generator -->
+                <!-- <generator class="native"></generator> -->
+                
+                <!-- Using The UserDefine Sequence -->
+                <!-- <generator class="native">
+                <param name="sequence_name">NATIVE_SEQ</param>
+                <param name="initial_value">1000</param>
+                <param name="increment_size">10</param>
+                </generator> -->
+                
+                <!-- using Just Name -->
+               <!--  <generator class="native">
+                <param name="sequence_name">NATIVE_SEQ</param>
+                </generator> -->
+                
+                <!-- Using auto Generate sequence -->
+                <generator class="native">
+                <param name="sequence_name">NATIVE_SEQ</param>
+                  </generator>
+                  </id>
+                  
+                  <property name="StudentName" column="STUDENTNAME" length="15" />
+                  <property name="StudentAddress" column="STUDENTADDRESS" length="15"/>
+                  <property name="StdentAvrage" column="STDENTAVRAGE" length="15"/>
+                  <property name="StudentFullMark" column="STUDENTFULLMARK" length="15"/>
+                  <property name="StudentSection" column="STUDENTSECTION" length="15" />
+      </class>
+      </hibernate-mapping>

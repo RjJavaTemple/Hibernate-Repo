@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;Conn.Rj.Cfgs&apos; to &apos;Proj-22_MordernBootstraping_Approch-3/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;Proj-21_MordernBootstraping_Approch-2&apos;&#x0D;&#x0A;- Destination element: &apos;Proj-22_MordernBootstraping_Approch-3/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;Proj-21_MordernBootstraping_Approch-2/src/main/java/Conn.Rj.Cfgs&apos;" description="Copy package" destination="=Proj-22_MordernBootstraping_Approch-3/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;Conn.Rj.Cfgs" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1625766318002" version="1.0"/>
+</session>

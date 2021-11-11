@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MainClassCreate.java&apos; to &apos;Proj-20_MordernBootstraping_Approch-1/src/main/java/Conn.Rj.MainClasas&apos;&#x0D;&#x0A;- Original project: &apos;Proj-19AllPropertyFileCheck&apos;&#x0D;&#x0A;- Destination element: &apos;Proj-20_MordernBootstraping_Approch-1/src/main/java/Conn.Rj.MainClasas&apos;&#x0D;&#x0A;- Original element: &apos;Conn.Rj.MainClasas.MainClassCreate.java&apos;" description="Copy compilation unit" destination="=Proj-20_MordernBootstraping_Approch-1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;Conn.Rj.MainClasas" element1="/src&lt;Conn.Rj.MainClasas{MainClassCreate.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1625764553257" units="1" version="1.0"/>
+</session>

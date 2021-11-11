@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;Conn.Rj.ClintApp&apos; to &apos;proj-39_GeneratoreIDENTITYExample/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;Proj-36_Generator_Example&apos;&#x0D;&#x0A;- Destination element: &apos;proj-39_GeneratoreIDENTITYExample/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;Proj-36_Generator_Example/src/main/java/Conn.Rj.ClintApp&apos;" description="Copy package" destination="=proj-39_GeneratoreIDENTITYExample/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;Conn.Rj.ClintApp" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1627318043191" version="1.0"/>
+</session>

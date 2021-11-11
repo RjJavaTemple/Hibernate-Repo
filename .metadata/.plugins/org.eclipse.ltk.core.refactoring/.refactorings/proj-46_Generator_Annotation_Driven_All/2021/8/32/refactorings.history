@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;proj-46_Generator_Annotation_Driven_All&apos;&#x0D;&#x0A;- Original project: &apos;proj-46_Generator_Annotation_Driven_All&apos;&#x0D;&#x0A;- Original element: &apos;Hibernate.map.xml&apos;" description="Delete element" element1="src/main/java/Conn/Rj/Entity/Hibernate.map.xml" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1627923875179" subPackages="false" version="1.0"/>
+</session>

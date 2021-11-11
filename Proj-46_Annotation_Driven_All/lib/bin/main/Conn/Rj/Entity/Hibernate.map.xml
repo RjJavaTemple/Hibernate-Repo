@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+      <hibernate-mapping>
+      <class  name="Conn.Rj.Entity.SetAndGetClass" table="STUDENT1234" dynamic-insert="true">
+                  <!-- Create The Id Value In The Table -->
+                  <id name="StuSno"  >
+                
+               <!-- Select Generator -->
+               <generator class="Conn.Rj.Coustom.Coustom_Generator"/>
+            
+                  </id>
+                  
+                  <property name="StudentName" column="STUDENTNAME" length="15" />
+                  <property name="StudentAddress" column="STUDENTADDRESS" length="15"/>
+                  <property name="StdentAvrage" column="STDENTAVRAGE" length="15"/>
+                  <property name="StudentFullMark" column="STUDENTFULLMARK" length="15"/>
+                  <property name="StudentSection" column="STUDENTSECTION" length="15" />
+      </class>
+      </hibernate-mapping>

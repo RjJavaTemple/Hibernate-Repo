@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        <hibernate-mapping>
+        <class name="Conn.Rj.Entity.TimeStampingOperacation" table="HibernameTimeStamp">
+        <id name="sid">
+        <generator class="increment"/>
+        </id>
+        
+        <timestamp name="lastUpdated"/>
+        
+        <property name="name" type="string" />
+        <property name="address" type="string" />
+        <property name="gender" type="string" />
+        <property name="section" type="string" />
+        <property name="cast" type="string" />
+        
+        
+        </class>
+        </hibernate-mapping>

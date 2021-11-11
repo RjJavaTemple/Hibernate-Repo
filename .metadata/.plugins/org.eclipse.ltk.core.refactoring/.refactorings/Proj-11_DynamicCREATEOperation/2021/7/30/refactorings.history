@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;product.hbm.xml&apos; to &apos;Proj-36_Generator_Example/src/main/java/Conn.Rj.Entity&apos;&#x0D;&#x0A;- Original project: &apos;Proj-11_DynamicCREATEOperation&apos;&#x0D;&#x0A;- Destination element: &apos;Proj-36_Generator_Example/src/main/java/Conn.Rj.Entity&apos;&#x0D;&#x0A;- Original element: &apos;product.hbm.xml&apos;" description="Copy file" destination="=Proj-36_Generator_Example/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;Conn.Rj.Entity" element1="src/main/java/Conn/Rj/Entity/product.hbm.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1626974601027" units="0" version="1.0"/>
+</session>

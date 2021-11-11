@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+          
+          <hibernate-mapping>
+            <class name="Conn.Rj.Entity.SetterAndGetterMeyhod" table="PRODUCT5" >
+          
+           <id name="pid" column="PID" unsaved-value="101010"  length="10">
+         
+           </id>
+           <property name="pname" column="PNAME" length="10"/>
+           <property name="price" column="PRICE"  length="10"/>
+           <property name="qty" column="QTY" length="10"/>
+           <property name="status" column="STATUS" length="10"/>
+           <property name="catogery" column="CATOGERY" length="10"/>
+           
+            
+            </class>
+          </hibernate-mapping>

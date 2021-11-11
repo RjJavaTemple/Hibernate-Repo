@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        <hibernate-mapping>
+        <class name="Com.Rj.Entity.Set_Value_SetterAndGetter" table="STUDENT_11">
+         <id name="sno" column="SNO"/>
+         <property name="name" column="NAME"/>
+         <property name="address" column="ADDRESS"/>
+         <property name="mark" column="MARK"/>
+         <property name="avg" column="AVG"/>
+         <property name="grade" column="GRADE"/>
+        
+        
+        
+        </class>
+        </hibernate-mapping>

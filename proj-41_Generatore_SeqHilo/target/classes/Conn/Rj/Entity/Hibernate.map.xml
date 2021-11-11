@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+      <hibernate-mapping>
+      <class  name="Conn.Rj.Entity.SetAndGetClass" table="STUDENT123" dynamic-insert="true">
+                  <!-- Create The Id Value In The Table -->
+                  <id name="StuSno" length="10" >
+               
+               
+               <!-- Using SeqHilo Generator -->
+               <!-- <generator class="seqhilo">
+               <param name="sequence">Seq_Hilo_Gen</param>
+               <param name="max_lo">5</param>
+               </generator>     -->
+               
+               <!-- Just Configure SeqHiol -->
+               <!-- <generator class="seqhilo"/> -->
+               
+               <!-- Using he Auto Generate userDefine Generator -->
+              <!--  <generator class="seqhilo">
+                <param name="sequence">Seq_Hilo_Gen1</param>
+               <param name="max_lo">5</param>
+               </generator> -->
+               
+               
+                             
+                  </id>
+                  
+                  <property name="StudentName" column="STUDENTNAME" length="15" />
+                  <property name="StudentAddress" column="STUDENTADDRESS" length="15"/>
+                  <property name="StdentAvrage" column="STDENTAVRAGE" length="15"/>
+                  <property name="StudentFullMark" column="STUDENTFULLMARK" length="15"/>
+                  <property name="StudentSection" column="STUDENTSECTION" length="15" />
+      </class>
+      </hibernate-mapping>
